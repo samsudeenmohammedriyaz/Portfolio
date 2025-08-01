@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Github, Linkedin, Twitter, Mail, Phone, MapPin, Send } from 'lucide-react';
 
-const Portfolio = () => {
+const Contact = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [clicked, setClicked] = useState(false);
   const [hovered, setHovered] = useState(false);
@@ -713,4 +713,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Contact;

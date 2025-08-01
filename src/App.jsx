@@ -11,7 +11,7 @@ import MouseFollower from './components/MouseFollower';
 function App() {
   return (
     <div className="relative overflow-hidden">
-      <Portfolio />
+      <Contact />
 
     </div>
   );
