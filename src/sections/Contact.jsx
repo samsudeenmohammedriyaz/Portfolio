@@ -401,14 +401,21 @@ const Contact = () => {
                 <div className="absolute inset-0 border-3 border-indigo-500/30 rounded-full animate-spin" style={{ animationDuration: '25s' }} />
                 <div className="absolute inset-6 border-2 border-purple-500/20 rounded-full animate-spin" style={{ animationDuration: '18s', animationDirection: 'reverse' }} />
 
-                <div className="absolute inset-16 bg-gradient-to-br from-gray-900/80 to-indigo-900/40 rounded-full border-2 border-gray-700/50 backdrop-blur-lg flex items-center justify-center p-2">
+                {/* Central profile area with much larger image */}
+                <div className="absolute inset-8 sm:inset-12 lg:inset-16 bg-gradient-to-br from-gray-900/80 to-indigo-900/40 rounded-full border-2 border-gray-700/50 backdrop-blur-lg flex items-center justify-center p-1 sm:p-2">
                   <div className="text-center">
-                    <div className="w-52 h-52 rounded-full mx-auto mb-4 overflow-hidden border-3 border-indigo-400/60 shadow-xl shadow-indigo-500/40 transition-all duration-500 hover:scale-110 group">
-                      <div className="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-600 flex items-center justify-center text-6xl font-bold text-white">
-                        SR
-                      </div>
+                    {/* Much larger profile image with enhanced effects */}
+                    <div className="w-32 h-32 sm:w-44 sm:h-44 lg:w-52 lg:h-52 xl:w-60 xl:h-60 rounded-full mx-auto mb-3 sm:mb-4 overflow-hidden border-2 sm:border-[3px] border-indigo-400/60 shadow-xl shadow-indigo-500/40 transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-indigo-500/60 group">
+                      <img
+                        src="../assets/Profile.png"
+                        alt="Samsudeen Mohammed Riyaz S"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                        loading="lazy"
+                      />
+                      {/* Subtle glow effect on hover */}
+                      <div className="absolute inset-0 bg-indigo-500/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </div>
-                    <p className="text-gray-300 text-sm font-medium tracking-wider">FULL STACK DEVELOPER</p>
+                    <p className="text-gray-300 text-xs sm:text-sm font-medium tracking-wider">FULL STACK DEVELOPER</p>
                   </div>
                 </div>
               </div>
