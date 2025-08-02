@@ -28,7 +28,7 @@ const About = () => {
 
   // Initialize EmailJS with Public Key
   useEffect(() => {
-    emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS Public Key
+    emailjs.init('yLst_k0GjVfqm6yDW'); // Replace with your EmailJS Public Key
   }, []);
 
   // Unified event handler setup
@@ -185,10 +185,10 @@ const About = () => {
     setState(s => ({ ...s, isSubmitting: true, submitStatus: '' }));
     try {
       await emailjs.sendForm(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS Service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
+        'service_0tgiozs', // Replace with your EmailJS Service ID
+        'template_4dc3k9e', // Replace with your EmailJS Template ID
         e.target,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS Public Key
+        'yLst_k0GjVfqm6yDW' // Replace with your EmailJS Public Key
       );
       setState(s => ({ ...s, isSubmitting: false, submitStatus: 'success', formData: { name: '', email: '', subject: '', message: '' } }));
     } catch (error) {
