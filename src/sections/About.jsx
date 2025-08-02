@@ -185,10 +185,10 @@ const About = () => {
     setState(s => ({ ...s, isSubmitting: true, submitStatus: '' }));
     try {
       await emailjs.sendForm(
-        'service_0tgiozs', // Replace with your EmailJS Service ID
-        'template_4dc3k9e', // Replace with your EmailJS Template ID
+        'service_0tgiozs', 
+        'template_4dc3k9e', 
         e.target,
-        'yLst_k0GjVfqm6yDW' // Replace with your EmailJS Public Key
+        'yLst_k0GjVfqm6yDW' 
       );
       setState(s => ({ ...s, isSubmitting: false, submitStatus: 'success', formData: { name: '', email: '', subject: '', message: '' } }));
     } catch (error) {
